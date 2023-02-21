@@ -17,6 +17,7 @@ const cors = require("cors");
 const config = {
   host: 'virtualrehabilitationcs-server.postgres.database.azure.com',
   port: 5432,
+  database: 'virtualrehabilitationcs-database',
   user: 'mooyhjmirm',
   password: 'Z1TQ2B8I5NGMZQI0$',
   ssl: true
