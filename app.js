@@ -68,6 +68,8 @@ app.get('/clear', async (req, res) => {
     res.status(200).send('Clear successfully!');
   } catch (err) {
     res.status(500).send(err.message);
+  } finally {
+    initTable();
   }
 })
 
