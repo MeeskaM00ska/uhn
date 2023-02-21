@@ -61,6 +61,16 @@ app.get('', async (req, res) => {
   }
 })
 
+app.get('/clear', async (req, res) => {
+  try {
+    const query = `DROP table user_progress`;
+    await client.query(query);
+    res.status(200).send('Clear successfully!');
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+})
+
 app.post('/save', async (req, res) => {
   try {
     const {
