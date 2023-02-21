@@ -3,16 +3,24 @@ const pg = require("pg");
 const cors = require("cors");
 
 
+// const config = {
+//   host: 'localhost',
+//   // Do not hard code your username and password.
+//   // Consider using Node environment variables.
+//   user: 'postgres',
+//   password: '123456',
+//   database: 'postgres',
+//   port: 5432,
+//   //ssl: true
+// };
+
 const config = {
-  host: 'localhost',
-  // Do not hard code your username and password.
-  // Consider using Node environment variables.
-  user: 'postgres',
-  password: '123456',
-  database: 'postgres',
+  host: 'virtualrehabilitationcs-server.postgres.database.azure.com',
   port: 5432,
-  //ssl: true
-};
+  user: 'mooyhjmirm',
+  password: 'Z1TQ2B8I5NGMZQI0$',
+  ssl: true
+}
 
 const app = express();
 const PORT = process.env.PORT || 4000;
